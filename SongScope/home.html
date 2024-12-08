@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongScope</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <header>
+            <h1>
+                <a href="home.html" class="return-home">
+                    <img src="witlogo.png" alt="SongScope Logo" style="height: 50px;">
+                </a>
+            </h1>
+            <nav>
+
+                <a href="stats.html">Stats</a>
+                <a href="#">About Us</a>
+                <a href="#" class="button">Placeholder</a>
+            </nav>
+        </header>
+        
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton"></button>
+    </div>
+
+    <section>
+        <h2>Trending Albums</h2>
+        <div class="grid">
+            <div class="card" onclick="window.location.href='gnx.html'">
+                <img src="https://best-fit.transforms.svdcdn.com/production/albums/Kendrick-Lamar-GNX-cover.jpg?w=469&h=469&q=100&auto=format&fit=crop&dm=1732353435&s=d8eebc757decc24a11a0d89b3cc31b5b" alt="" height="300">
+                <h3>GNX</h3>
+                <p>Kendrick Lamar</p>
+            </div>
+            <div class="card" onclick="window.location.href='dbr.html'">
+                <img src="https://images.genius.com/84a9d63a69af7b55d7d443614692e05b.1000x1000x1.jpg" alt="" height="300">
+                <h3>Days Before Rodeo</h3>
+                <p>Travis Scott</p>
+            </div>
+            <div class="card" onclick="window.location.href='mxp.html'">
+                <img src="https://i.scdn.co/image/ab67616d0000b27376c5a1960013e9203bcd6cd5" alt="Album 3" height="300">
+                <h3>Mixtape PLUTO</h3>
+                <p>Future</p>
+            </div>
+            <div class="card" onclick="window.location.href='bts.html'">
+                <img src="https://t2.genius.com/unsafe/600x600/https%3A%2F%2Fimages.genius.com%2F553f94982011ff60c094a5cb30e78da8.1000x1000x1.png" alt="Album 3" height="300">
+                <h3>Beautiful Thugger Girls</h3>
+                <p>Young Thug</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Trending Songs</h2>
+        <div class="grid">
+            <div class="card" onclick="window.location.href='SFU.html'">
+                <img src="https://i1.sndcdn.com/artworks-000457019874-aoo2hc-t500x500.jpg" alt="Song 1" height="300">
+                <h3>SIX FEET UNDER</h3>
+                <p onclick="window.location.href='wknd.html'">The Weeknd</p>
+            </div>
+            <div class="card" onclick="window.location.href='Nos-page.html'">
+                <img src="https://i1.sndcdn.com/artworks-3enS1ROLisly-0-t500x500.jpg" alt="Song 2" height="300">
+                <h3>News Or Something</h3>
+                <p onclick="window.location.href='future.html'">Future</p>
+            </div>
+            <div class="card" onclick="window.location.href='JB.html'">
+                <img src="https://images.genius.com/bf63bb8706be88df50d7ca6f8438bed9.1000x1000x1.jpg" alt="Song 3" height="300">
+                <h3>Jonesboro</h3>
+                <p>Young Thug</p>
+            </div> 
+            <div class="card" onclick="window.location.href='FaS.html'">
+                <img src="https://i1.sndcdn.com/artworks-000500690406-hw9ng3-t500x500.jpg" alt="Song 3" height="300">
+                <h3>Flaws And Sins</h3>
+                <p onclick="window.location.href='juice.html'">Juice WRLD</p>
+            </div>
+           
+        </div>
+    </section>
+
+    <section>
+        <h2>All Time Classics</h2>
+        <div class="grid">
+            <div class="card" onclick="window.location.href='sj.html'">
+                <img src="https://images.genius.com/b8677a93f694276197a90f0fc9a30e2a.1000x1000x1.png" alt="Song 1" height="300">
+                <h3>Slow Jamz</h3>
+                <p onclick="window.location.href='kanye.html'">Kanye West</p>
+            </div>
+            <div class="card" onclick="window.location.href='mask.html'">
+                <img src="https://images.genius.com/7f65bcb43d7e489adb5f3b50a5948323.1000x1000x1.png" alt="Song 2" height="300">
+                <h3>Mask off</h3>
+                <p onclick="window.location.href='future.html'">Future</p>
+            </div>
+            <div class="card" onclick="window.location.href='spd.html'">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/KendrickLamarSwimmingPools.jpg" alt="Song 3" height="300">
+                <h3>Swimming Pools</h3>
+                <p onclick="window.location.href='kdot.html'">Kendrick Lamar</p>
+            </div>
+            <div class="card" onclick="window.location.href='loveMe.html'">
+                <img src="https://m.media-amazon.com/images/I/61UTgwdOUDL._UF1000,1000_QL80_.jpg" alt="Song 3" height="300">
+                <h3>Love Me</h3>
+                <p>Lil Wayne</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const searchButton = document.getElementById('searchButton');
+        const searchInput = document.getElementById('searchInput');
+    
+        // Mapping of search keywords to HTML file paths
+        const searchMap = {
+            "mask off": "mask.html",
+            "days before rodeo": "dbr.html",
+            "gnx": "gnx.html",
+            "days before rodeo: the prayer": "theprayer.html",
+            "flaws and sins": "FaS.html",
+            "news or something": "Nos-page.html",
+            "six feet under": "SFU.html",
+            "mixtape pluto": "mxp.html",
+            "slow jamz": "sj.html",
+            "mask off": "mask.html",
+            "swimming pools": "spd.html",
+            "future": "future.html",
+            "kendrick lamar": "kdot.html",
+            "kanye west": "kanye.html",
+            "juice wrld": "juice.html",
+            "travis scott": "trav.html",
+            "the weeknd": "wknd.html",
+            "beautiful thugger girls": "bts.html",
+            "jonesboro": "JB.html",
+            "lil wayne": "wayne.html",
+            "zombies": "zombies.html",
+            "sloppy toppy": "sloptop.html",
+            "skyfall": "skyf.html",
+            "quintana pt 2": "quin.html",
+            "quintana 2": "quin.html",
+            "quintana part 2": "quin.html",
+            "mamacita": "mmc.html",
+            "drugs you should try it": "dysti.html",
+            "grey": "grey.html",
+            "dont play": "dp.html",
+            "don't play": "dp.html",
+            "basement freestyle": "basement.html",
+            "backyard": "backyard.html",
+            "bacc": "bacc.html",
+            "family dont matter": "fdm.html",
+            "love me": "loveme.html",
+            "you said": "ys.html",
+            "tomorrow til infinity": "tti.html",
+            "Tomorrow 'Til Infinity": "tti.html",
+            "take care": "tc.html",
+            "she wanna party": "swp.html",
+            "oh yeah": "oy.html",
+            "on fire": "of.html",
+            "me or us": "mou.html",
+            "for yall": "fy.html",
+            "for yall": "fy.html",
+            "for y'all": "fy.html",
+            "for yall": "fy.html",
+            "do you love me": "dylm",
+            "feel it": "fi.html",
+            "get high": "gh.html",
+            "daddys party": "db.html",
+            "daddy's party": "db.html",
+            "daddy party": "db.html",
+            
+        }
+        function performSearch() {
+            const query = searchInput.value.trim().toLowerCase();
+            if (searchMap[query]) {
+                // Redirect to the corresponding HTML file
+                window.location.href = searchMap[query];
+            } else {
+                // Handle unmatched queries
+                alert("No results found. Please try searching for another term.");
+            }
+        }
+    
+        // Handle click on the search button
+        searchButton.addEventListener('click', performSearch);
+    
+        // Handle pressing Enter key inside the search input
+        searchInput.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+    
+</body>
+</html>

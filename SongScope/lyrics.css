@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.main-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.album-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.album-section img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.song-details {
+    flex: 1;
+    color: #ffffff;
+}
+
+.song-details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.song-details a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.song-lyrics {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(32, 30, 30);
+    border-radius: 10px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.song-lyrics pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Ensures the navbar stays at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    color: #ffffff; /* Adjust text color for better contrast */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Ensures the navbar stays at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better readability */
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    color: #ffffff; /* Adjust text color for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better separation */
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.album-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 120px 40px 20px; /* Added padding-top to account for the fixed header */
+    gap: 20px;
+}
+
+.album-section img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+/* General styling for clickable links */
+.song-details a {
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    color: white;
+}
+
+.song-details a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.album-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.album-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.song-details h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+
+.song-details h2:hover {
+ 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: default;
+}
+
+.return-home {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+
+  .return-home:hover {
+    color: #444444;
+    transform: translateX(-5px);
+  }
