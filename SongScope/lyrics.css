@@ -86,14 +86,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: fixed; /* Ensures the navbar stays at the top of the page */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    z-index: 1000; /* Ensures the navbar is on top of other elements */
-    color: #ffffff; /* Adjust text color for better contrast */
-}
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    color: #ffffff; 
 
 header h1 {
     font-size: 1.5rem;
@@ -138,7 +137,7 @@ header nav a {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 120px 40px 20px; /* Added padding-top to account for the fixed header */
+    padding: 120px 40px 20px; 
     gap: 20px;
 }
 
@@ -146,7 +145,6 @@ header nav a {
     max-width: 300px;
     border-radius: 10px;
 }
-/* General styling for clickable links */
 .song-details a {
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
