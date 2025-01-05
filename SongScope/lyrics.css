@@ -111,14 +111,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    position: fixed; /* Ensures the navbar stays at the top of the page */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for better readability */
-    z-index: 1000; /* Ensures the navbar is on top of other elements */
-    color: #ffffff; /* Adjust text color for better contrast */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better separation */
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1000;
+    color: #ffffff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 header h1 {
